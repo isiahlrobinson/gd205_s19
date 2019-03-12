@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
     public Transform hazard;
     Vector3 startPos;
     public TextMesh playerMessage;
-
+     
 	// Use this for initialization
 	void Start () {
         playerPos = transform.position;

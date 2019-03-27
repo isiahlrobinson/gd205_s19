@@ -24,10 +24,15 @@ public class PreyBehavior : MonoBehaviour
     }
     private void OnCollisionEnter(Collision col)
    {
-    //this destroys game object on collision
-        if (col.transform == pred){
+   // this destroys game object on collision
+       if (col.transform == pred)
+        {
             // Destroy(this.gameObject);
-            col.gameObject.GetComponent<Renderer>().material.color = Color.red;
-        }
+            gameObject.GetComponent<Renderer>().material.color = Color.red;
+       }
+      /*  if (col.gameObject.CompareTag("prey"))
+        {
+            Destroy (col.gameObject);
+        }*/
     }
-}
+} 
